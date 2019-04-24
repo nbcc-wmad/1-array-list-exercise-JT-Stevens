@@ -76,5 +76,17 @@ namespace ArrayListSimpleEx
                 phrase.Insert(phrase.Count - 1, txtSecondPos.Text);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (forwardOrder)
+            {
+                phrase.RemoveAt(1);
+            }
+            else
+            {
+                phrase.RemoveAt(phrase.Count - 2);
+            }
+        }
     }
 }
