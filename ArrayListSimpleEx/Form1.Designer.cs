@@ -87,6 +87,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add to Second Position";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button1
             // 

@@ -64,5 +64,17 @@ namespace ArrayListSimpleEx
                 lblMessage.Text += word + " ";
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (forwardOrder)
+            {
+                phrase.Insert(1, txtSecondPos.Text);
+            }
+            else
+            {
+                phrase.Insert(phrase.Count - 1, txtSecondPos.Text);
+            }
+        }
     }
 }
